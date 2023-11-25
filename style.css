@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 10px 7%;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+}
+
+
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#home > img {
+    border-radius: 50%;
+}
+
+#home > div:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.rectangle{
+    width: 100%;
+    height: 355px;
+    margin-top: 5%;
+    background-image: url("./images/Rectangle\ 20.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.search{
+    margin-top: 5%;
+}
+.search > div {
+    margin-top: 2%;
+    display: flex;
+    gap: 0;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.search > div > input {
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    background: #F3F3F3;
+    height: 30px;
+    padding: 5px;
+}
+
+.buttons {
+    margin-top: 5%;
+    display: flex;
+    gap: 10px;
+}
+
+.showResults{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 25px;
+    
+}
+
+.filters{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    
+    padding-left: 5px;
+    gap: 7px;
+}
+.rating > div {
+    align-items: center;
+}
+.show{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    min-height: 35vh;
+    min-width: 23vw;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.cards > img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+.cards > p{
+    padding: 0 5px;
+}
+.name, .time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.name > div, .time>div {
+    font-weight: 700;
+}
+
+.time > div {
+    color: red;
+}
+
+footer{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 5%;
+    margin-bottom: 7%;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+}
+
+.cookpal, .about{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.email > input {
+    border: none;
+    background-color: #F3F3F3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.email > button {
+    border: none;
+    background-color: #509E2F;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.dropDown{
+    display: none;
+    position: absolute;
+    align-items: center;
+    right: 0%;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+.dropDown> li{
+   padding: 0;
+   /* position: absolute; */
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width: 850px){
+    .buttons > img{
+        height: 45px;
+        width: 55px;
+    }
+    .showResults{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #home{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookPal</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <div><img src="./images/Cookpal 1.png" alt="" /></div>
+      <div id="home">
+        <div >Home</div>
+        <div >Explore</div>
+        <div >Help</div>
+        <img
+          src="https://lh3.googleusercontent.com/ogw/AKPQZvwcvaUIGVKvofnKXdzafaPCWC6VQ26rkK2_FCKUyQ=s32-c-mo"
+          alt="profile"
+          class="home"
+        />
+      </div>
+      
+      <div class="menu">
+        <img src="./images/menu.png" alt="">
+        <ul class="dropDown">
+            <li >Home</li>
+        <li >Explore</li>
+        <li >Help</li>
+        <!-- <img
+          src="https://lh3.googleusercontent.com/ogw/AKPQZvwcvaUIGVKvofnKXdzafaPCWC6VQ26rkK2_FCKUyQ=s32-c-mo"
+          alt="profile"
+          class="home"
+        /> -->
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="rectangle">
+        <h3 style="color: rgb(246, 87, 29); margin-left: 7%">Trending Now</h3>
+        <h1 style="color: whitesmoke; margin-left: 7%">
+          Prince's famous salad with cheese
+        </h1>
+        <h2 style="color: aliceblue; margin-left: 7%">By Prince Kumar</h2>
+      </div>
+      <div class="search">
+        <h2>Search for Recipes</h2>
+        <div>
+          <input id="search" type="text" placeholder="Search for Recipes" />
+          <img src="./images/Search-btn.png" alt="" onclick="searchRecipe()" />
+        </div>
+      </div>
+      <div class="buttons">
+        <img src="./images/All.png" alt="All Recipes" onclick="displayAll()" />
+        <img src="./images/veg.png" alt="Veg Recipes" onclick="displayVeg()" />
+        <img
+          src="./images/non veg.png"
+          alt="Non Veg"
+          onclick="displayNonVeg()"
+        />
+      </div>
+
+      <div class="showResults">
+        <div class="filters">
+          <h1>Filters</h1>
+          <div class="rating">
+            <h4>Rating</h4>
+            <div>
+              <input type="checkbox" id="above4" name="rating" /> 4.5 and above
+            </div>
+            <div>
+              <input type="checkbox" id="below4" name="rating" /> Below 4
+            </div>
+          </div>
+        </div>
+        <div class="show">
+          <!-- <div class="cards">
+                <img src="https://source.unsplash.com/random?veggies" alt="">
+                <p>Veg</p>
+                <div class="name">
+                    <div>Veggie Delight</div>
+                    <div class="rating">4.5</div>
+                </div>
+                <div class="time">
+                    <div>20min</div>
+                    <div class="img">
+                        <img src="./images/like.png" alt="">
+                        <img src="./images/comments.png" alt="">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="cookpal">
+        <div class="img">
+          <img src="./images/Cookpal 1.png" alt="" />
+        </div>
+        <p>
+          Cookpal is a recipe website with a wide variety of delicious recipes,
+          easy-to-use search function. Join our community and let's cook
+          together!
+        </p>
+      </div>
+      <div class="company">
+        <h2>
+            Company
+        </h2>
+        <ol>
+            <li>Home</li>
+            <li>Explore</li>
+            <li>Team</li>
+            <li>About Us</li>
+            <li>Activity</li>
+        </ol>
+      </div>
+      <div class="resources">
+        <h2>Resources</h2>
+        <ol>
+            <li>Blog</li>
+            <li>Use Cases</li>
+            <li>Testimonials</li>
+            <li>Insights</li>
+        </ol>
+      </div>
+      <div class="about">
+        <div>
+            <img src="./images/Cookpal 1.png" alt="">
+        </div>
+        <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+        <div class="email">
+            <input type="email" placeholder="Your Email">
+            <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
